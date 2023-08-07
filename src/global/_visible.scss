@@ -1,0 +1,14 @@
+.visible {
+    &--desktop {
+        display: block;
+        @media(max-width: $md) {
+            display: none;
+        }
+    }
+    &--mobile {
+        display: none;
+        @media(max-width: $md) {
+            display: block;
+        }
+    }
+}

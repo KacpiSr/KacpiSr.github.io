@@ -1,0 +1,12 @@
+.case-studies-big-centered-text {
+background-color: #01818D;
+    &__heading {
+        color: $white;
+        text-align: center;
+        font-size: 48px;
+        line-height: 58px;
+        max-width: 1090px;
+        margin: auto;
+        padding: 100px 0;
+    }
+}

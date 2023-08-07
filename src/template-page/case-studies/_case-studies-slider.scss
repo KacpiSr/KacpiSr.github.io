@@ -1,0 +1,68 @@
+.case-studies-slider {
+    &__heading {
+        font-size: 40rem;
+        line-height: 52rem;
+        margin-top: 10rem;
+        @media(max-width: $lg) {
+            font-size: 40px;
+            line-height: 52px;
+        }
+    }
+    &__link {
+        display: block;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    &__description {
+        display: flex;
+        color: $black50;
+        list-style: none;
+        margin: 5rem 0 0 0;
+        font-size: 18rem;
+        padding: 0;
+        @media(max-width: $lg) {
+            font-size: 16px;
+            line-height: 29px;
+        }
+        li {
+            &:after {
+                content: "·";
+                margin-right: 4px;
+
+            }
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__item {
+        width: auto !important;
+    }
+    &-arrows {
+        position: relative;
+        z-index: 100000;
+        &__container {
+            position: relative;
+        }
+        &__buttons {
+            left: inherit;
+            right: 90rem;
+            top: 30rem;
+        }
+        &__button {
+            &--dark {
+                background-color: $black !important;
+                span {
+                    color: $white !important;
+                }
+                svg {
+                    fill: $white !important
+                }
+            }
+        }
+    }
+}

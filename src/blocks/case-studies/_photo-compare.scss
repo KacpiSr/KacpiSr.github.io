@@ -1,0 +1,40 @@
+.photo-compare {
+  margin-top: 70px;
+  .container {
+    padding: 0;
+    height: 62.5vmin;
+    width: 100vmin;
+    position: relative;
+    overflow: hidden;
+    // border: 5px solid #bfc0c1;
+    // box-shadow: -3px 5px 15px #000;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  #my-img {
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+  }
+  #slider {
+    position: relative;
+    -webkit-appearance: none;
+    width: calc(100% + 40px);
+    height: 100%;
+    margin-left: -20px;
+    background-color: transparent;
+    outline: none;
+  }
+  #slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 45px;
+    width: 45px;
+    // background: url("slider-icon.svg"), rgba(255, 255, 255, 0.3);
+    border: 3px solid white;
+    border-radius: 50%;
+    background-size: contain;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}

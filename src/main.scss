@@ -1,0 +1,110 @@
+//Global
+@import "global/variables";
+@import "global/base";
+@import "global/typography";
+@import "global/grid";
+@import "global/swiper-arrows";
+@import "global/visible";
+
+//Components
+@import "components/btn";
+@import "components/input";
+@import "components/custom-headings";
+@import "components/main-menu";
+@import "components/main-menu-mobile";
+@import "components/breadcrumbs";
+@import "components/gsap";
+@import "components/scrollbar-custom";
+@import "components/rollingtext";
+@import "components/progressbar";
+
+//Mixin
+@import "mixin/mixin";
+
+//Template-layout
+@import "template-layout/header";
+@import "template-layout/footer";
+@import "template-layout/preloader";
+@import "template-layout/404";
+@import "template-layout/dev";
+
+//Template-blocks
+@import "blocks/case-studies/hero";
+@import "blocks/case-studies/project-info";
+@import "blocks/case-studies/heading-icon-content";
+@import "blocks/case-studies/heading-with-two-columns";
+@import "blocks/case-studies/heading-with-three-columns";
+@import "blocks/case-studies/heading-content-right";
+@import "blocks/case-studies/image-full";
+@import "blocks/case-studies/big-centered-text";
+@import "blocks/case-studies/big-scrolling-text";
+@import "blocks/case-studies/two-columns-with-images";
+@import "blocks/case-studies/two-columns-with-lists";
+@import "blocks/case-studies/two-columns-heading-content";
+@import "blocks/case-studies/two-columns-image-content";
+@import "blocks/case-studies/two-columns-content-image";
+@import "blocks/case-studies/photo-compare";
+
+@import "blocks/services/hero";
+@import "blocks/services/categories";
+@import "blocks/services/heading";
+@import "blocks/services/boxes";
+@import "blocks/services/cta";
+@import "blocks/services/projects";
+@import "blocks/services/testimonial";
+@import "blocks/services/other-services";
+@import "blocks/services/two-columns-content-project";
+@import "blocks/services/two-columns-content-testimonial";
+@import "blocks/services/two-columns-content-cta";
+
+
+//Template-page
+// @import "template-page/home-page/home-page";
+@import "template-page/page-about";
+@import "template-page/home-page/hero";
+@import "template-page/home-page/accordion";
+@import "template-page/home-page/sec-logo-swiper";
+@import "template-page/home-page/_sec-services";
+@import "template-page/home-page/_about";
+@import "template-page/home-page/work";
+@import "template-page/home-page/clients-brands";
+@import "template-page/home-page/clients";
+@import "template-page/home-page/_sec-awards";
+@import "template-page/home-page/_sec-blog";
+
+@import "template-page/blog/page-blog";
+@import "template-page/blog/single-blog";
+@import "template-page/blog/ebooks";
+@import "template-page/blog/case-studies";
+@import "template-page/blog/article-view-autor";
+@import "template-page/blog/category-blog";
+@import "template-page/blog/tag-blog";
+@import "template-page/blog/author";
+
+@import "template-page/case-studies/case-studies-hero";
+@import "template-page/case-studies/case-studies-categories";
+@import "template-page/case-studies/case-studies-item";
+@import "template-page/case-studies/case-studies-slider";
+@import "template-page/case-studies/case-studies-type-of-client";
+@import "template-page/case-studies/case-studies-awards";
+@import "template-page/case-studies/case-studies-content";
+@import "template-page/case-studies/case-studies-cooperation";
+@import "template-page/case-studies/case-studies-results";
+@import "template-page/case-studies/case-studies-blog";
+@import "template-page/case-studies/case-studies-category-boxes";
+@import "template-page/case-studies/brands";
+@import "template-page/case-studies/cta-questions";
+
+@import "template-page/services/hero";
+@import "template-page/services/categories";
+@import "template-page/services/cta";
+
+//Template-parts
+@import "template-parts/category-components";
+@import "template-parts/sec-newsletter";
+@import "template-parts/case-studies-cooperation";
+
+
+
+
+

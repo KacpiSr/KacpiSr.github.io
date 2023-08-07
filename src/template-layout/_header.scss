@@ -1,0 +1,55 @@
+.header {
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+    width: 100%;
+    z-index: 1000000;
+    
+    @media (max-width: $xl) {
+        background-image: url("../../dist/img/menu-mobile-bg.png");
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    &.nav-up {
+        top: -178rem;
+        @media (max-width: $xl) {
+            top: -140px;
+        }
+    }
+    &.bg-black {
+        background-color: $black;
+        .main-menu-submenu {
+          &:before {
+            transform: translate(-107rem, -95rem);
+            @media (max-width: $hd) {
+              transform: translate(-37rem, -95rem);
+            }
+          }
+          &__logo {
+            transform: translate(15rem, -61rem);
+            @media (max-width: $hd) {
+              transform: translate(135rem, -61rem);
+          }
+        }
+      }
+    }
+    &.nav-scroll-up{
+        border-bottom: 1px solid #2a2a2a;
+        background-color: $black;
+        .main-menu__row{
+            height: 90rem;
+            
+        }
+    }
+    &__spacer {
+        background-color: $black;
+    }
+    &.js-triangle {
+        --mask: linear-gradient(-45deg, #0000 77.78px, #000 0);
+        -webkit-mask: var(--mask);
+        mask: var(--mask);
+        background-color: $black;
+    }
+}

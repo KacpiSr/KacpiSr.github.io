@@ -1,0 +1,110 @@
+.hp-blog {
+    background-color: $black90;
+    text-align: center;
+    position: relative;
+    padding-bottom: 100rem;
+    padding-top: 50px;
+    @media (max-width: $md) {
+        padding-bottom: 0;
+        background-color: $white;
+    }
+    &__container {
+        @media (max-width: $md) {
+            position: relative;
+            background-color: $black90;
+            padding-bottom: 40px;
+        }
+    }
+    &__heading {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 60rem;
+        text-align: left;
+        color: $white;
+        mix-blend-mode: difference;
+        @media (max-width: $md) {
+            position: static;
+        }
+    }
+    &__btn {
+        display: flex;
+        margin-top: 20px;
+        &--wrapper {
+            text-align: right;
+            position: relative;
+            z-index: 1;
+            @media (max-width: $md) {
+                text-align: center;
+            }
+        }
+    }
+    &__rectangle {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        // top:-5px;
+        z-index: 0;
+    }
+    &-posts {
+        margin-bottom: 80rem;
+        @media (max-width: $md) {
+            margin-bottom: 0;
+            padding-top: 20px;
+        }
+        &__post {
+            @media (max-width: $md) {
+                width: 850px;
+            }
+            &:nth-child(2) {
+                margin-top: -30rem;
+                @media (max-width: $md) {
+                    margin-top: -25px;
+                }
+            }
+        }
+        &__imagehref {
+            display: flex;
+        }
+        &__image {
+            position: relative;
+            z-index: 1;
+        }
+        &__heading-arrow {
+            position: relative;
+            display: inline-flex;
+            top:5px;
+
+            svg{
+                path{
+                    fill:$white;
+                }
+            }
+        }
+        &__heading {
+            color: $white;
+            mix-blend-mode: difference;
+            position: relative;
+            z-index: 1;
+            font-weight: 600;
+            text-align: left;
+        }
+        &__category {
+            text-align: left;
+            opacity: 0.5;
+            color: $white;
+            mix-blend-mode: difference;
+            font-size: 16rem;
+            line-height: 19px;
+            position: relative;
+            z-index: 1;
+        }
+        &__row {
+            @media (max-width: $md) {
+                overflow: scroll;
+                overflow-y: hidden;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

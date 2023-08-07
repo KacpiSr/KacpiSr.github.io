@@ -1,0 +1,102 @@
+.hp-hero {
+    text-transform: uppercase;
+    background-color: $black90;
+    padding-bottom: 140rem;
+    padding-top: 100vh;
+    &__animation {
+    }
+    &__showreel {
+        overflow: hidden;
+        position: relative;
+        height: 605px;
+        video {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__showreel-btn {
+        //  width: 50px;
+        //   height: 50px;
+        //   position: fixed;
+        //   top: 0;
+        //   left: 0;
+        //   border: 3px solid dodgerblue;
+        //   border-radius: 50%;
+        //   pointer-events: none;
+    }
+    &__about {
+        margin-top: 150rem;
+        color: $white;
+    }
+
+    &__header {
+        margin-bottom: 60rem;
+        @media (max-width: $md) {
+            font-size: 18px;
+            margin-bottom: 42px;
+        }
+    }
+
+    &__logos {
+        background-color: $black;
+        margin-bottom: 40rem;
+        display: flex;
+        justify-content: flex-end;
+        @media (max-width: $md) {
+            justify-content: center;
+            margin-bottom: 0;
+        }
+        .logo-elements {
+            position: relative;
+            top: -28rem;
+            gap: 50rem;
+            display: flex;
+            img {
+                height: 55rem;
+                @media (max-width: $md) {
+                    height: 100%;
+                    max-width: 65px;
+                    width: 100%;
+                }
+            }
+            @media (max-width: $md) {
+                top: 0px;
+                gap: 35px;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    &__content {
+        font-size: 28rem;
+        font-weight: 600;
+        line-height: 140%;
+        max-width: 680rem;
+        width: 100%;
+        @media (max-width: $md) {
+            font-size: 17px;
+            max-width: 365px;
+            width: 100%;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: flex-end;
+        @media (max-width: $md) {
+            display: none;
+        }
+    }
+    .color-line{
+        color:#9366d7;
+    }
+    // .color-line:after {
+    //     content: "";
+    //     width: 80rem;
+    //     display: inline-block;
+    //     height: 2px;
+    //     background: #9366d7;
+    //     transform: translateY(-10px);
+    // }
+}

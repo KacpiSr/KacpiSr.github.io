@@ -1,0 +1,87 @@
+.hp-logo-swiper {
+    width: 100%;
+    padding-top: 115rem;
+    
+    // transition: all 1s;
+    .swiper-wrapper {
+        padding-top: 115rem;
+        padding-bottom: 115rem;
+        @media (max-width: $md) {
+            gap: 30px;
+        }
+    }
+    .logo-swiper {
+        color: $black;
+        .swiper-slide {
+            width: 37%;
+            &__item {
+                width: 340px !important;
+                padding-bottom: 20px;
+            }
+            &__item {
+                img {
+                    max-width: 70%;
+                }
+            }
+        }
+        &__heading {
+            font-weight: 600;
+            line-height: 130%;
+            text-transform: uppercase;
+            margin-top: 50px;
+            margin-bottom: 15px;
+            font-size: 20rem;
+            @media (max-width: $md) {
+                margin-top: 25px;
+                font-size: 20px;
+            }
+        }
+        &__content {
+            font-weight: 400;
+            line-height: 150%;
+            font-size: 14rem;
+            @media (max-width: $md) {
+                font-size: 14px;
+            }
+        }
+    }
+    .swiper-topic {
+        margin: 0;
+        font-size: 18rem;
+        color: $black;
+        font-weight: 500;
+        line-height: 130%;
+        text-transform: uppercase;
+        @media (max-width: $md) {
+            margin-bottom: 45px;
+            font-size: 18px;
+        }
+    }
+    .swiper-header {
+        display: flex;
+        position: relative;
+        align-items: center;
+        @media (max-width: $md) {
+            display: none;
+        }
+    }
+}
+// .swiper-slide {
+//     display: flex;
+//     justify-content: flex-end;
+//     div {
+//         width: 340px;
+//         max-width: 100%;
+//     }
+//     &:first-child {
+//         justify-content: flex-start;
+//     }
+//     &.swiper-slide-active,
+//     &.swiper-slide-prev {
+//         justify-content: flex-start;
+//     }
+//     &.swiper-slide-next {
+//         display: flex;
+//         justify-content: center;
+//     }
+// }
