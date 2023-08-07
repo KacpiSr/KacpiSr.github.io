@@ -1,0 +1,131 @@
+.case-studies-item {
+    &__container {
+        max-width: 1920px;
+        position: relative;
+        left: 120px;
+        width: auto;
+        @media (max-width: $hd) {
+            left: 120rem
+        }
+        @media(max-width: $md) {
+            left: 0;
+            padding-right: 0;
+        }
+    }
+    &__wrapper {
+        padding: 150rem 0 50rem 0;
+        position: relative;
+        z-index: 10000;
+        @media(max-width: $md) {
+            padding: 30px 0 80px 0;
+        }
+        &:after {
+            content: "";
+            height: 1px;
+            background-color: $black40;
+            display: block;
+            position: absolute;
+            bottom: -16rem;
+            width: calc(100% - 240px);
+            @media (max-width: $hd) {
+                width: calc(100% - 240rem);
+            }
+            @media(max-width: $md) {
+                width: calc(100% - 25px);
+            }
+        }
+    }
+    &__column {
+        position: relative;
+        max-width: 540rem;
+        @media(max-width: $md) {
+            max-width: inherit;
+            position: static;
+        }
+    }
+    &__image {
+        position: relative;
+        margin-left: 140rem;
+        @media(max-width: $md) {
+            margin-left: 0;
+        }
+        img {
+            position: absolute;
+            transform: translate(0, 50rem);
+            @media(max-width: $md) {
+                left: 0;
+                transform: none;
+                width: 56px;
+            }
+        }
+    }
+    &__heading {
+        position: absolute;
+        font-size: 86rem;
+        line-height: 86rem;
+        transform: rotate(270deg);
+        margin: 75rem 24rem;
+        min-width: 442rem;
+        @media(max-width: $md) {
+            transform: rotate(0);
+            position: static;
+            font-size: 46px;
+            line-height: 46px;
+            padding-left: 15px;
+            margin-bottom: 40px;
+        }
+        span {
+            font-size: 42rem;
+            line-height: 42rem;
+            color: $gray50;
+            display: inline-block;
+            transform: translate(-15rem, -40rem);
+            @media(max-width: $md) {
+                font-size: 20px;
+                line-height: 20px;
+                transform: translate(-10px, -20px);
+            }
+        }
+    }
+    &__link {
+        font-size: 18rem;
+        line-height: 22rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-width: 125rem;
+        margin: 0 auto 0 auto;
+        font-weight: 600;
+        @media(max-width: $lg) {
+            font-size: 18px;
+            line-height: 22px;
+            position: absolute;
+            bottom: 25px;
+            max-width: 150px;
+            right: 50px;
+            left: inherit;
+        }
+        &::before {
+            background-image: url("../../dist/img/arrow-black.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            content: "";
+            height: 20rem;
+            width: 20rem;
+            position: absolute;
+            right: 0;
+            transform: translate(25rem, 0px);
+            background-size: 15rem;
+            @media(max-width: $lg) {
+                height: 20px;
+                width: 20px;
+                background-size: 15px;
+                right: -20px;
+            }
+        }
+    }
+    &--all-projects {
+        
+    }
+}

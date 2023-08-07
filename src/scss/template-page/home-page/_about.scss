@@ -1,0 +1,57 @@
+.hp-about-us {
+    padding-top: 50rem;
+    padding-bottom: 110rem;
+    position: relative;
+    &__top {
+        position: relative;
+        height: 430rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__heading {
+        color: $white;
+        mix-blend-mode: difference;
+        z-index: 99;
+        position: relative;
+        top: 25rem;
+    }
+    &__logo {
+        z-index: 1;
+        position: relative;
+        right: -30rem;
+        svg {
+            path {
+                fill: white;
+                // fill:#e5e5e5;
+            }
+        }
+    }
+    &__video {
+        height: 560rem;
+        overflow: hidden;
+        filter:brightness(0.6);
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__wrap-text {
+        margin-top: 20rem;
+    }
+    &__text {
+        color: $white;
+        padding-left: 30rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    &__btn {
+        &--wrapper {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

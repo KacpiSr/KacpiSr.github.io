@@ -1,0 +1,41 @@
+.hp-awards {
+    padding-bottom: 155rem;
+    @media (max-width: $md) {
+        margin-bottom: 40px;
+    }
+    &__logos {
+        padding-left: 50rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        @media (min-width: $hd) {
+            padding-left: 50px;
+        }
+        @media (max-width: $md) {
+            grid-template-columns: repeat(2, 2fr);
+            margin-top: 70px;
+            padding-left: 0;
+        }
+        @media (max-width: 466px) {
+            margin-top: 50px;
+        }
+    }
+    &__logo {
+        border-top: 1px solid $gray;
+        padding:30rem 0;
+        display: flex;
+        justify-content: center;
+        @media (min-width: $hd) {
+            padding-top: 25px;
+            padding-bottom: 6px;
+        }
+        &:nth-child(n + 5) {
+            border-bottom: 1px solid $gray;
+        }
+        @media (max-width: $md) {
+            &:nth-child(5),
+            &:nth-child(6) {
+                border-bottom: 0px solid $gray;
+            }
+        }
+    }
+}

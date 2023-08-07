@@ -1,0 +1,113 @@
+.hp-clients-brands {
+    // background-color: $black;
+    padding-top: 65rem;
+    padding-bottom: 210rem;
+    // margin-bottom: 180rem;
+    @media (max-width: $md) {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    &__topic {
+        position: relative;
+        padding-left: 30rem;
+        margin-bottom: 100rem;
+        @media (max-width: $md) {
+            margin-bottom: 65px;
+        }
+        span {
+            text-transform: uppercase;
+            font-size: 22rem;
+            font-weight: 500;
+            line-height: 130%;
+            color: $white;
+            position: relative;
+            top: 30rem;
+            display: block;
+            @media (max-width: $md) {
+                top: 20px;
+                font-size: 18px;
+                left: 10px;
+            }
+        }
+        &__triangle {
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: 0;
+            top: 0;
+            border-style: solid;
+            border-width: 104rem 104rem 0 0;
+            border-color: $yellow transparent transparent transparent;
+            @media (max-width: $md) {
+                border-width: 80px 80px 0 0;
+            }
+        }
+    }
+    .clients-logos-desktop {
+        @media (max-width: $md) {
+            display: none;
+        }
+        .clients-logos {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            &__top,
+            &__bottom {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+            &__line {
+                height: 1px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                background-color: $black40;
+                margin: 30rem 0;
+            }
+            img {
+                height: 70rem;
+                // opacity: 0;
+            }
+        }
+    }
+    .hp-clients-brands-mobile {
+        display: none !important;
+        padding-left: 20px;
+        @media (max-width: $md) {
+            margin-top: 10px;
+            display: block !important;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__content {
+            position: relative;
+            display: flex;
+            left: -25px;
+            padding-left: 25px;
+            width: 100vw;
+            gap: 40px;
+            justify-content: flex-start;
+            overflow-x: scroll;
+            padding-bottom: 20px;
+            &::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(145, 144, 144, 0.3);
+                background-color: $black40;
+                border-radius: 50%;
+            }
+            &::-webkit-scrollbar {
+                height: 2px;
+                background-color: $black40;
+            }
+            &::-webkit-scrollbar-thumb {
+                border-radius: 50%;
+                background-color: $black80;
+            }
+            img {
+                height: 55px;
+            }
+        }
+    }
+}
