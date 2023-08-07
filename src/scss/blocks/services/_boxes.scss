@@ -1,0 +1,50 @@
+.services-block-boxes {
+  &__container {
+    padding: 0 155rem;
+  }
+  &__column {
+    display: flex;
+  }
+  &__heading {
+    border-top: 4px solid $black;
+    font-size: 36px;
+    line-height: 40px;
+    color: $black100;
+    max-width: 270rem;
+    margin-left: 30rem;
+    padding-top: 15rem;
+    min-height: 100rem;
+    @media(max-width: $lg) {
+      max-width: inherit;
+      min-height: inherit;
+    }
+  }
+  &__description {
+    color: $black100;
+    font-size: 16px;
+    line-height: 26px;
+    padding-left: 30rem;
+    padding-top: 25rem;
+    padding-right: 69rem;
+    min-height: 155rem;
+    @media(max-width: $xxxl) {
+      padding-right: 0;
+    }
+  }
+  &__icon {
+    width: 90px;
+    height: 90px;
+  }
+  &__link {
+    margin: 20rem 0 102rem 30rem;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 22px;
+    color: $black;
+    svg {
+        width: 12px;
+        position: relative;
+        top: 3px;
+    }
+  }
+}

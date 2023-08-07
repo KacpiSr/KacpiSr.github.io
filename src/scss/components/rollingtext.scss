@@ -1,0 +1,10 @@
+.wrapperRollingText {
+    white-space: nowrap;
+    margin-bottom:20px;
+    .rollingText {
+        font-size: 200rem;
+        line-height: 120%;
+        font-weight: 600;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,63 @@
+.case-studies-project-info {
+    &__container {
+        padding: 64rem 140rem;
+        max-width: 1650px;
+        border-bottom: 1px solid $black40;
+        @media(max-width: $xl) {
+            border-bottom: 0
+        }
+    }
+    &-details {
+        &__heading {
+            text-transform: uppercase;
+            color: $black40;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 15px;
+        }
+        &__description {
+           font-size: 36rem;
+           line-height: 44rem;
+           color: $black; 
+           margin-top: 18rem;
+           margin-bottom: 39rem;
+           @media(max-width: $xl) {
+            font-size: 26px;
+            line-height: 31px;
+        }
+           
+        }
+    }
+    &-scope-of-work {
+        &__heading {
+            text-transform: uppercase;
+            color: $black40;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 15px;
+            @media (max-width: $xl) {
+                margin-top: 30px;;
+                }
+        }
+        &__list {
+            list-style: none;
+            padding-left: 0;
+            @media(max-width: $xl) {
+                margin-top: 15px;
+            }
+        }
+        &__item {
+            margin-bottom: 9.6rem;
+            font-size: 26rem;
+            line-height: 32rem;
+            @media(max-width: $xl) {
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 10px;
+            }
+            &:before {
+                content:"•";
+            }
+        }
+    }
+}
